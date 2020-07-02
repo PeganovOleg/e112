@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.7"
+before-install: 
+  - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script:
+  - pytest
+
+[![Travis][build-badge]][build]
+
+[build-badge]: https://img.shields.io/travis/PeganovOleg/e112/master.png?style=flat-square
+
+[build]: https://travis-ci.org/PeganovOleg/e112
